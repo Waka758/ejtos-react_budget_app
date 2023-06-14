@@ -11,7 +11,7 @@ const Budget = () => {
 
     const handleEditBudget = (e)=>{
         if(e.target.value<totalExpenses) alert("Amount lower than amount spent so far")
-        else if (e.target.value> 20000) alert("Max budget allowed is 20.000")
+        else if (e.target.value> 20000) alert("Max budget allowed is 20000")
         else dispatch({type: "SET_BUDGET", payload: e.target.value})        
     }
 
